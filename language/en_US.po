@@ -1,0 +1,49 @@
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Controller/ForgotPasswordController.php:105
+msgid "User not found"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Controller/ForgotPasswordController.php:121
+msgid "Password key not found"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Controller/ForgotPasswordController.php:149
+msgid "An error occured"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Form/ForgotPasswordForm.php:45
+msgid "Request password"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Form/ResetPasswordForm.php:16
+msgid "Password"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Form/ResetPasswordForm.php:24
+msgid "Confirm password"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/src/Form/ResetPasswordForm.php:31
+msgid "Change password"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/view/xelax-user-forgot-password/forgot-password/finish-request.phtml:1
+msgid ""
+"The password reset request was successful and you should receive an e-mail "
+"with further instructions"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/view/xelax-user-forgot-password/forgot-password/finish-reset.phtml:1
+#, php-format
+msgid ""
+"Your password was successfully reset. You may now log in <a href=\"%s"
+"\">here</a>"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/view/xelax-user-forgot-password/forgot-password/request.phtml:1
+msgid "Forgot password?"
+msgstr ""
+
+#: bin/../vendor/xelax90/zf-user-forgot-password/view/xelax-user-forgot-password/forgot-password/reset.phtml:4
+#, php-format
+msgid "Hello %s, please choose a new password"
+msgstr ""

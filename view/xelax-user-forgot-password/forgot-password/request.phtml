@@ -1,0 +1,10 @@
+<h3><?= $this->translate('Forgot password?'); ?></h3>
+
+<?php
+$form = $this->form;
+
+$form->prepare();
+$form->setAttribute('action', $this->url('zfcuser/forgot-password'));
+$form->setAttribute('method', 'post');
+
+echo $this->form($form);

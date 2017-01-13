@@ -1,0 +1,14 @@
+<?php if(!empty($this->error)): ?>
+    <h3><?= $this->translate($this->error); ?></h3>
+<?php else : ?>
+    <h3><?= sprintf($this->translate('Hello %s, please choose a new password'), $this->user->getDisplayName()); ?></h3>
+
+    <?php
+    $form = $this->form;
+
+    $form->prepare();
+    $form->setAttribute('action', $this->url('zfcuser/forgot-password/reset', ['token' => $this->token]));
+    $form->setAttribute('method', 'post');
+
+    echo $this->form($form);
+endif;

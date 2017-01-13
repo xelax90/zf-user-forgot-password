@@ -1,0 +1,15 @@
+<?php
+/* @var $notification XelaxUserNotification\Notification\NotificationInterface */
+$notification = $this->notification;
+/* @var $receiver \XelaxUserEntity\Entity\User */
+$receiver = $notification->getTo();
+/* @var $passwordEntity \XelaxUserForgotPassword\Entity\ForgotPassword */
+$passwordEntity = $notification->getParameters()['passwordEntity'];
+$link = $this->serverUrl($this->url('zfcuser/forgot-password/reset', ['token' => $passwordEntity->getId()], []));
+?>
+Hello <?= $receiver->getDisplayName() ?>, <br>
+<br>
+We have received a request to reset your password. To set a new password, please click the link below:<br>
+<a href="<?= $link ?>"><?= $link ?></a><br>
+<br>
+- Your System

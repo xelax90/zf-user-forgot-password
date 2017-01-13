@@ -1,0 +1,11 @@
+<?php
+/* @var $notification XelaxUserNotification\Notification\NotificationInterface */
+$notification = $this->notification;
+/* @var $receiver \XelaxUserEntity\Entity\User */
+$receiver = $notification->getTo();
+?>
+Hello <?= $receiver->getDisplayName() ?>,
+
+a new password for your account has been successfully set.
+
+- Your System

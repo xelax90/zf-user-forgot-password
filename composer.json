@@ -1,0 +1,28 @@
+{
+    "name": "xelax90/zf-user-forgot-password",
+    "description": "Password recovery system based on xelax90/zf-user-notification",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Aleksandr",
+            "email": "schurix@gmx.de"
+        }
+    ],
+	"extra" : {
+		"zf" : {
+			"module" : "XelaxUserForgotPassword"
+		}
+	},
+    "autoload": {
+        "psr-4": {
+            "XelaxUserForgotPassword\\": "src/"
+        }
+    },
+    "require": {
+		"xelax90/zf-user-notification" : "^1.0.1"
+	},
+	"require-dev" : {
+	},
+	"suggest" : {
+	}
+}
