@@ -16,7 +16,7 @@ class ForgotPasswordOptions extends AbstractOptions{
 	/**
 	 * @var DateInterval
 	 */
-	protected $requestLifetime = "+1 day";
+	protected $requestLifetime = "P1D";
 	
 	public function __construct($options = null) {
 		parent::__construct($options);
@@ -41,10 +41,7 @@ class ForgotPasswordOptions extends AbstractOptions{
 	 */
 	public function setRequestLifetime($requestLifetime) {
 		if(is_string($requestLifetime)){
-		    $now = new \Datetime();
-            $end = new \DateTime($now->format('Y-m-d H:i:s'));
-            $end->modify($requestLifetime);
-			$requestLifetime = $now->diff($end);
+		    $requestLifetime = new DateInterval($requestLifetime);
 		}
 		if(! ($requestLifetime instanceof DateInterval) ){
 			throw new InvalidArgumentException('Request Lifetime must be a DateInterval instance or valid string for its constructor.');
