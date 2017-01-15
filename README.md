@@ -37,6 +37,6 @@ pre-defined ones in the view folder.
 You can configure the request lifetime in the global configuration with the 
 ```request_lifetime``` key. The passed value must either be a DateInterval object or
 an interval specification for its constructor 
-(see [DateInterval::__construct](http://php.net/manual/de/dateinterval.construct.php)).
+(see [DateInterval::__construct](http://php.net/manual/en/dateinterval.construct.php)).
 It defaults to one day.
 
